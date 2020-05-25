@@ -1,14 +1,14 @@
-package com.alibaba.datax.plugin.writer.clickhousewriter;
+package com.alibaba.datax.plugin.reader.clickhousereader;
 
 import com.alibaba.datax.common.spi.ErrorCode;
 
-public enum ClickHouseWriterErrorCode implements ErrorCode {
+public enum ClickHouseErrorCode implements ErrorCode {
     ;
 
     private final String code;
     private final String description;
 
-    ClickHouseWriterErrorCode(String code, String description) {
+    private ClickHouseErrorCode(String code, String description) {
         this.code = code;
         this.description = description;
     }
